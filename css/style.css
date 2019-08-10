@@ -1,0 +1,94 @@
+nav {
+  flex: 0 0 auto;
+  position: fixed;
+  width: 100vw;
+  z-index: 99; }
+  nav ul {
+    list-style-type: none;
+    display: none; }
+    nav ul a {
+      display: block;
+      background-color: #fcf9ea;
+      padding: 1em;
+      font-size: 1.2em;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ff8a5c;
+      transition: color 2s ease, background 1s ease, padding 1s ease; }
+      nav ul a:hover {
+        background-color: #ff8a5c;
+        color: #fcf9ea;
+        padding-left: 1.2em; }
+
+.nav--container {
+  padding: 0 1.2em;
+  background-color: #49beb7;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.3em solid #ff8a5c; }
+  .nav--container img {
+    width: 3.5em;
+    margin: 1em;
+    align-self: center; }
+
+.bar {
+  width: 2em;
+  height: .3em;
+  margin: .4em;
+  border-radius: .2em;
+  background: #ff8a5c; }
+
+.btn {
+  padding: .3em;
+  display: inline-block;
+  align-self: center; }
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(#fcf9ea88, #ff8a5c80), url("../../img/office_hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* //shorthand for this */
+  display: flex;
+  flex-direction: column; }
+
+.banner {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .banner h1 {
+    font-size: .5em;
+    text-transform: uppercase;
+    color: #ff8a5c; }
+  .banner h3 {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    color: #494949; }
+  .banner__icons {
+    padding: 2em; }
+    .banner__icons a {
+      display: inline-block;
+      font-size: 2em;
+      background-color: #ff8a5c;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      text-align: center;
+      color: #fcf9ea;
+      transition: color 1s ease, transform 1s ease; }
+      .banner__icons a:hover {
+        color: #fcf9ea;
+        transform: translateY(-1em); }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif; }

@@ -1,0 +1,114 @@
+nav {
+    flex: 0 0 auto;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+
+    ul {
+        list-style-type: none;
+        display: none;
+
+        a {
+            display: block;
+            background-color: $beige;
+            padding: 1em;
+            font-size: 1.2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $orange;
+            transition: color 2s ease, background 1s ease, padding 1s ease;
+
+            &:hover {
+                background-color: $orange;
+                color: $beige;
+                padding-left: 1.2em;
+            }
+        }
+
+    }
+}
+
+
+.nav--container {
+    padding: 0 1.2em;
+    background-color: $teal;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .3em solid $orange;
+
+    img {
+        width: 3.5em;
+        margin: 1em;
+        align-self: center;
+    }
+}
+
+.bar {
+    width: 2em;
+    height: .3em;
+    margin: .4em;
+    border-radius: .2em;
+    background: $orange;
+}
+
+.btn {
+    padding: .3em;
+    display: inline-block;
+    align-self: center;
+}
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(#fcf9ea88, #ff8a5c80), url('../../img/office_hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* //shorthand for this */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: .5em;
+        text-transform: uppercase;
+        color: $orange;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        font-size: 1.3em;
+        color: $dark-grey;
+    }
+
+    &__icons {
+        padding: 2em;
+
+        a {
+            display: inline-block;
+            font-size: 2em;
+            background-color: $orange;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            text-align: center;
+            color: $beige;
+            transition: color 1s ease, transform 1s ease;
+
+            &:hover {
+                color: $beige;
+                transform: translateY(-1em)
+            }
+        }
+
+    }
+}
