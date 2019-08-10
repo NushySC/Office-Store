@@ -1,0 +1,40 @@
+.services {
+    min-height: 80vh;
+    background: url("../../img/morecolors.jpeg")center/cover fixed no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.service {
+    color: $teal;
+    display: flex;
+    margin: 1em;
+    font-size: 1.3em;
+
+    &__icon {
+        align-self: center;
+        font-size: 2em;
+        margin-right: .5em;
+        padding: .5em;
+        border: .1em solid $teal;
+        border-radius: 50%;
+    }
+
+    &__text {
+        h3 {
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: .2em;
+            margin-top: .5em;
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    .services--center {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
